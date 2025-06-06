@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #1a005e, #4a90e2);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Style */
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 350px;
+}
+
+/* Heading */
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Display Area */
+.display-time {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  border: 2px dashed #fff;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+
+/* Buttons */
+.buttons {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.start {
+  background-color: #00e676;
+  color: #000;
+}
+
+.reset {
+  background-color: #ff1744;
+  color: #fff;
+}
+
+.lap {
+  background-color: #ffd600;
+  color: #000;
+}
+
+/* Lap Times */
+.lap-section {
+  margin-top: 20px;
+}
+
+.lap-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.lap-list {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.lap-list li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Scrollbar for laps */
+.lap-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lap-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-align: center;
+}
